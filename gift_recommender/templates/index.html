@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<<html>
+<head>
+    <title>Gift Recommender</title>
+</head>
+<body>
+    <h1>🎁 Gift Recommender</h1>
+    <form action="/recommend" method="POST">
+        <label>Recipient Age:</label><br>
+        <input type="number" name="age" required><br><br>
+
+        <label>Interests (comma-separated):</label><br>
+        <input type="text" name="interests" placeholder="e.g. music, tech" required><br><br>
+
+        <label>Personality:</label><br>
+        <select name="personality" required>
+            <option value="creative">Creative</option>
+            <option value="logical">Logical</option>
+        </select><br><br>
+
+        <label>Budget ($):</label><br>
+        <input type="number" name="budget" required><br><br>
+
+        <button type="submit">Get Gift Ideas</button>
+    </form>
+</body>
+</html>

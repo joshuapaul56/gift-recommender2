@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+html>
+<head>
+    <title>Gift Recommendations</title>
+</head>
+<body>
+    <h1>🎁 Recommended Gifts</h1>
+
+    {% if recommendations %}
+        <ul>
+            {% for gift in recommendations %}
+                <li>{{ gift.name }} - ${{ gift.price }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>😔 Sorry, no gifts found within your budget and preferences.</p>
+    {% endif %}
+
+    <br>
+    <a href="/">🔙 Try Again</a>
+</body>
+</html>
